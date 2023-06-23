@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{ /* o asteristico representa que todos os elementos vão ser afetados pelo estilo*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*organiza melhor os items na sua tela fazendo os conteúdos e outras propiedades se encaixarem mais parecidos com caixa e vai redimensionando esse valor*/
+    font-family: 'Opens Sans', sans-serif;
+}
+
+header{
+    position: fixed;/*o elemento é removido fluxo normal do documento e nenhum espaço é criado para o elemento no layout da pagina. O elemento fica posicionado na mesma localidade em toda a pagina*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex; /* pode-se chamar também de inline-flex, ou seja, ele organiza os elementos (somente os elementos e não os sub-elementos que seriam elementos dentro de outros elementos, por isso ao organizar o header ele alinha horizontalmente somente o elemento 'a' e o 'ul' e não a lista dentro dele)*/
+    justify-content: space-between; /* Distribui os itens igualmente. O primeiro item (o primeiro é o "a" onde está monocat) e o ultimo item (a lista onde estão os itens da nav bar) nivela com o fim*/
+    align-items: center; /*justifica mas so que na vertical e não se preocupa com o tamanho ou justificação do item na horizontal podendo alguns botões ficarem grandes na horizontal*/
+    z-index: 10000;
+}
+
+header .logo{/* o "." para descrever que você está mudando uma classe*/
+    position: relative; /*basicamente você escolhe a posição do elemento e ele respeita o flow do documento*/
+    color: #222;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2em; /*tamanho de fonte que respeita o tamanho da tela e muda mas mantém as proporções comparado as outras fontes na tela*/
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    gap: 40px;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color:#222;
+    font-weight: 500;
+    font-size: 1.25em;
+
+}
+
+header ul li.active a,
+header ul li a:hover{
+    color: #2196f3;
+}
+
+#home{/*# é para descrever que você está mudando um id*/
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+   
+    /*background-attachment: fixed;*/
+}
+
+#home::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50vw;
+    height: 25vw;
+    background: #2196f3;
+    border-top-right-radius: 25vw;
+    border-top-left-radius: 25vw;
+    
+}
+
+#home .content{
+    position: relative;
+    display: flex;
+    flex-direction: column; /*faz o flex q se comporta em fila, se comportar como coluna e cada elemento fica abaixo do outro*/
+    gap: 10px; /*distancia entre todos os elementos */
+    max-width: 650px;
+    z-index: 10;
+}
+
+#home .content h2{
+    position: relative;
+    font-size: 5em;
+    color: #2196f3;
+}
+
+#home .content p{
+    color: #222;
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+.btn{
+    position: relative;
+    display: inline-block;
+    font-size: 1.25em;
+    max-width: 200px;
+    background: #2196f3;
+    color: #fff1eb;
+    text-align: center;
+    padding: 18px 30px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+#home .girl{
+    position: absolute;/*o elemento sai do fluxo do documento e nenhum espaço é criado no layout*/
+    bottom: 0;
+    right: 100px;
+    max-height: 90vh;
+}
+
+/*6:19*/
