@@ -125,8 +125,61 @@ header ul li a:hover{
     position: relative;
     background: #050A30;
     min-height: 100vh;
-    padding: 120px 100px; 
+    padding: 120px 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
  }
+
+ .secText{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.secText h2{
+    font-size: 3em;
+    color: #fff1eb;
+
+}
+
+.secText p{
+    max-width: 700px;
+    text-align: center;
+    color: #fff1eb;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+#services .content{
+    display: grid; /*setta uma intersecção entre linhas verticais e horizontais*/
+    grid-template-columns: repeat(4,1fr); /*unidade de medida fraction como se fosse 1fr 1fr 1fr 1fr dividindo cada parte da grid em partes iguais */
+    grid-gap: 20px;/*distancia entre cada elemento do content */
+    margin: 40px 0;
+}
+
+#services .content .servicesBx{
+    background: #233dff;
+    padding: 50px 20px;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid #233dff;
+}
+
+#services .content .servicesBx:hover{
+    border: 2px solid #eab2bb;
+}
+
+#services .content .servicesBx img{
+   max-width: 100px;
+   opacity: 0.5; 
+}
+
+#services .content .servicesBx:hover img{
+    opacity: 1;
+}
 
  #works{
     position: relative;
@@ -141,5 +194,6 @@ header ul li a:hover{
    min-height: 100vh;
    padding: 120px 100px; 
 }
+
 
 /*6:19*/
