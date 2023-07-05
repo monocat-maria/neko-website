@@ -107,6 +107,7 @@ header ul li a:hover{
     letter-spacing: 0.05em;
     text-decoration: none;
     margin-top: 10px;
+    border-radius: 5px;
 }
 
 .btn:hover{
@@ -161,23 +162,36 @@ header ul li a:hover{
 }
 
 #services .content .servicesBx{
-    background: #233dff;
-    padding: 50px 20px;
+   
+    padding: 100px 100px;
     justify-content: center;
     flex-direction: column;
     border: 2px solid #233dff;
+    border-radius: 5px;
 }
 
+#services .content .servicesBx:hover{
+    background: #eab2bb;
+}
 #services .content .servicesBx:hover{
     border: 2px solid #eab2bb;
 }
 
 #services .content .servicesBx img{
-   max-width: 100px;
+   max-width: 200px;
    opacity: 0.5; 
 }
 
 #services .content .servicesBx:hover img{
+    opacity: 1;
+}
+
+#services .content .servicesBx h3{/*fazendo hover de texto*/
+    color: #eab2bb;
+}
+
+#services .content .servicesBx:hover h3{/*obtendo hover de texto*/
+    color: #233dff;
     opacity: 1;
 }
 
