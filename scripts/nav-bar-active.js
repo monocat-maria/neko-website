@@ -2,7 +2,7 @@
  
  function active(){ //function called active 
     list.forEach((i) =>
-    i.classList.remove('active')); // allows manipulatio of element's class content in this case on the html .nav li.active
+    i.classList.remove('active')); // allows manipulation of element's class content in this case on the html .nav li.active
     this.classList.add('active');
  }
 

@@ -139,6 +139,7 @@ header ul li a:hover{
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 
@@ -168,8 +169,10 @@ header ul li a:hover{
 
 #services .content .servicesBx{
    
-    padding: 100px 100px;
+    padding: 50px 20px;
+    display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     border: 2px solid #233dff;
     border-radius: 5px;
@@ -258,8 +261,8 @@ header ul li a:hover{
 
 #contact .content a{
     background: #233dff;
-    height: 120px;
-    
+    height: 100px;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -280,5 +283,52 @@ header ul li a:hover{
    margin-right: 10px; 
 }
 
+/*Responsive*/
+@media (max-width: 1250px)
+{
+    header
+    {
+        padding: 20px 50px; /*same top/botton measure*/
+    }
+    #home
+    {
+        padding: 150px 50px;
+        flex-direction: column;
+    }
+    #home .content h2
+    {
+        font-size: 4em;
+    }
+    .btn
+    {
+       max-width: 160px;
+       padding: 10px 20px;
+       font-size: 1em; 
+    }
+    #home .imgHome
+    {
+        position: absolute;
+        height: 60vh;
+        bottom: 0;
+        right: 50px;
+    }
+    .secText h2
+    {
+        font-size: 2em;
+        text-align: center;
+    }
+    #services, 
+    #works, 
+    #contact
+    {
+        padding: 100px 50px 50px;
+    }
+    #services .content,
+    #works .content,
+    #contact .content
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
 
+}
 /*6:19*/
