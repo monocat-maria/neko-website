@@ -10,6 +10,7 @@
     padding: 0;
     box-sizing: border-box; /*organiza melhor os items na sua tela fazendo os conteúdos e outras propiedades se encaixarem mais parecidos com caixa e vai redimensionando esse valor*/
     font-family: 'Opens Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 header{
